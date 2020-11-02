@@ -1,0 +1,105 @@
+.row-header{
+    padding: 0px auto;
+    margin: 0 auto;
+}
+
+.jumbotron{
+    margin: 0px auto;
+    padding: 90px 30px;
+    background: #9575CD;
+    color: #FFFAF0;
+}
+
+.row-text{
+    /* margin: 0px auto; */
+    padding: 30px 0px 20px 0px;
+    /* border-bottom: 1px ridge; */
+    min-height: 400px;
+}
+
+.footer{
+    background: #D1C4E9;
+    margin: 0px auto;
+    padding: 20px 0px;
+    color: #000000;
+}
+
+address{
+    font-size: 80%;
+    margin: 0px;
+    color: #0F0F0F;
+}
+
+body{
+    padding: 65px 0px 0px 0px;
+    z-index: 0;
+    /* color: #FFFFFF;
+    background: #000000; */
+}
+
+.navbar-dark{
+    background-color: #512DA8;
+}
+ 
+.tab-content{
+    border-left: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    padding: 15px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+.card{
+    margin-bottom: 40px;
+}
+
+/* ? Custom CSS to add fadein class to HISTORY*/
+.fade-in {
+animation: fadeIn ease 2.5s;
+-webkit-animation: fadeIn ease 2.5s;
+-moz-animation: fadeIn ease 2.5s;
+-o-animation: fadeIn ease 2.5s;
+-ms-animation: fadeIn ease 2.5s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+td:first-child{
+    text-align: center;
+}
+
+blockquote{
+    color: #808080;
+}
+
+cite{
+    color: #000000;
+}
+
+tr:last-child{
+    border-bottom: 1px #FFFFFF solid;
+}
+
+tr{
+    border-left: 1px #FFFFFF solid;
+}
+
+tr{
+    border-right: 1px #FFFFFF solid;
+}

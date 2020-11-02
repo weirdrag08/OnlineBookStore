@@ -1,0 +1,109 @@
+.row-header{
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.row-content{
+    margin: 0px auto;
+    padding: 50px 0px;
+    min-height: 400px;
+    margin-bottom: 100px;
+}
+
+.footer{
+    /* background: #D1C4E9; */
+    color:#648888;
+    margin: 0px auto;
+    padding: 20px 0px;
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+
+}
+
+.address{
+    font-size: 80%;
+    margin: 0px;
+    color: #0F0F0F;
+}
+
+#overview_next{
+    cursor: not-allowed;
+}
+
+body{
+    padding: 65px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark{
+    /* background-color: #512DA8; */
+    background-color: #F3A002;
+}
+
+p{
+    font-size: 1.1em;
+}
+
+.checkbox-item{
+    display: none !important;
+    }
+
+.label-item {
+    opacity: 0.5;
+    filter: grayscale(1);
+}
+    
+.checkbox-item:checked + label {
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+label {
+cursor: pointer;
+} 
+
+.form-part{
+    margin: 50px auto;
+    padding: 50px auto;
+}
+
+#closed{
+    display: none;
+}
+
+#opened{
+    display: flex;
+}
+
+/* ! Have to modify it, see stackoverflow or w3schools */
+/* .mail:valid {
+  border-color: black;
+}
+.mail:invalid {
+  border-color: red;
+}  */
+
+
+
+.footer ul li a{
+    color:#648888;
+}
+
+.dropdown-menu{
+    background-color: #F3A002;
+}
+.dropdown-item:hover{
+    background-color: black;
+    color:white;
+    transition: 0.6s;
+}
+.navbar .btn{
+    color: #000000;
+} 
+
+.nav-item:hover{
+    color:black;
+    transition: 0.6s;
+}
+.nav-link:hover{
+    color:white;
+}

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit = no"/>
+    <meta http-equiv="x-ua-compatible" content="ie = edge" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" integrity="sha512-f8mUMCRNrJxPBDzPJx3n+Y5TC5xp6SmStstEfgsDXZJTcxBakoB5hvPLhAfJKa9rCvH+n3xpJ2vQByxLk4WP2g==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Trade+Winds&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Online Book Store: Home</title>
+  </head>
+
+  <body>
+    <nav class = "navbar navbar-dark navbar-expand-sm fixed-top">
+      <div class = "container">
+        <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#Navbar">
+          <span class = "navbar-toggler-icon"></span>
+        </button>
+        <a class = "navbar-brand" href = "#"><img src = "images/symbol.svg" alt = "logo" class = "img-fluid" width = "50px"></a>
+        <div class = "collapse navbar-collapse" id = "Navbar">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item active"><a class="nav-link" href="#" onmouseenter="color_change(this)" onmouseout="color_back(this)" style="color:#000000; font-size:110%;"><img src = "images/bookshelf.svg" width = "45px" class = "img-fluid"> Home</a></li> &nbsp; &nbsp;
+            &nbsp; &nbsp; <li class="nav-item"><img src = "images/cart.svg" width = "45px" class = "img-fluid" style="margin-top: 5px;"></li> 
+            
+            <li class="nav-item"><div class="dropdown">
+              <a class="btn dropdown-toggle nav-link" type="button" id="dropdownMenuButton" role="button" data-toggle="dropdown" style=" margin-top: 6px; color:#000000; font-size: 110%;"onmouseenter="color_change(this)" onmouseout="color_back(this)">
+                Shopping Cart
+              </-a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="fiction.html">Fiction</a>
+                <a class="dropdown-item" href="romance.html">Romance</a>
+                <a class="dropdown-item" href="fantasy.html">Fantasy</a>
+                <a class="dropdown-item" href="history.html">History</a>
+                <a class="dropdown-item" href="poetry.html">Poetry</a>  
+                <a class="dropdown-item" href="travel.html">Travel</a>
+                <a class="dropdown-item" href="non_fiction.html">Non Fiction</a>
+                <a class="dropdown-item" href="short_stories.html">Short Stories</a>
+                <a class="dropdown-item" href="crime_&_thriller.html">Crime & Thriller</a>
+              </div>
+            </div></li>
+            
+          &nbsp; &nbsp; <li class="nav-item"><a class="nav-link" href="login.html" role="button" style="color:black; font-size: 110%;" onmouseenter="color_change(this)" onmouseout="color_back(this)"><img src="images/employees.svg" width="45px" class="img-fluid"> Login</a></li> &nbsp; &nbsp;
+          </ul>
+        </div> 
+      </div>
+    </nav>
+
+    <header>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="6000" style="filter:opacity(0.8);">
+        <div class="carousel-inner carousel-main">
+          <div class="carousel-item active">
+            <div class="carousel-caption my-carousel-caption d-none d-md-block">
+              
+              <form class = "form-inline justify-content-center"><input type = "text" class = "form-control" placeholder = "Search for a theme" id = "searchbar" style="width: 500px; height:40px ;"><a href = "#" class = "btn btn-warning" role = "button"><i class="fa fa-search" style="height: 22px;"></i></a></form>
+              <h1 style="font-size: 200%; margin-top: 10px; color:white; font-family: 'Lobster';"><em>It is during our darkest moments that we must focus to see the light.</em></h1>
+            </div>
+            <img class="d-block w-100 img-fluid" src="images/slider_1.jpg" alt="First slide" >
+            
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption my-carousel-caption d-none d-md-block">
+              
+              <form class = "form-inline justify-content-center"><input type = "text" class = "form-control" placeholder = "Search for a theme" id = "searchbar" style="width: 500px; height:40px ;"><a href = "#" class = "btn btn-warning" role = "button"><i class="fa fa-search" style="height: 22px;"></i></a></form>
+              <h1 style="font-size: 200%; margin-top: 10px; color:white; font-family: 'Lobster';"><em>The earth has music for those who listen</em></h1>
+            </div>
+            <img class="d-block w-100 img-fluid " src="images/slider_2.jpg" alt="Second slide">
+            
+          </div> 
+          <div class="carousel-item">
+            <img class="d-block w-100 img-fluid" src="images/slider_3.jpg" alt="Third slide">
+            <div class="carousel-caption my-carousel-caption d-none d-md-block">
+              <form class = "form-inline justify-content-center"><input type = "text" class = "form-control" placeholder = "Search for a theme" id = "searchbar" style="width: 500px; height:40px ;"><a href = "#" class = "btn btn-warning" role = "button"><i class="fa fa-search" style="height: 22px;"></i></a></form>
+              <h1 style="font-size: 200%; margin-top: 10px; color:white; font-family: 'Lobster';"><em>A place is not really a place without a bookstore.</em></h1>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+    <!-- </header> -->   
+  
+
+    <div class="container my-4">     
+        <div class="row row-content">
+          <div class="col-12">
+            
+          </div>
+        </div>
+
+      <p>
+        Here is a treasure for an investigative mind!!!
+       <strong>Drive the road of knowledge with the best collection of books...</strong></p>
+        <br>
+        <p>The aim is to capture the spirit of the book and enhance the appeal of the cover image and title.</p>
+
+  
+      <hr class="my-4" style="background-color: #888; width: 50%;">
+        <div class="row row-content">
+          <div class="col-12">
+
+          </div>
+        </div>
+
+      <!--Carousel Wrapper-->
+      <div id="multi-item-example" class="carousel slide carousel-fade carousel-multi-item" data-ride="carousel" data-interval="6000">
+  
+        <!--Controls-->
+        <div class="row controls-top mb-4">
+          <div class="col-1">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><img class="img-fluid" src="images/left-arrow.svg" width="70px" alt="previous"></a>
+          </div>
+          <div class="col-10">
+          </div>
+          <div class="col-1 mr-0">
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><img class="img-fluid " src="images/right-arrow.svg" width="70px" alt="next"></a>
+          </div>
+        </div>
+        
+        <!--/.Controls-->
+  
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+          <!--First slide-->
+          <div class="carousel-item active">
+  
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card mb-2">
+                  <img class="img-fluid my-new" src="images/new.svg" alt="offer" width="65px">
+                  <img class="card-img-top book-img" src="books-images/harry_potter.jpg" alt="Harry Potter" width="40px">
+                  <div class="card-body">
+                   
+                    <a class="btn btn-warning" href="payment.html">Shop</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <button type="button" class="btn btn-primary" data-toggle="popover" title="Harry Potter" data-content="Author: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; J.K. Rowling <br>Genre: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Fiction <br> Language: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; English">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-3">
+                <div class="card mb-2">
+                  <img class="img-fluid my-new" src="images/new.svg" alt="offer" width="65px">
+                  <img class="card-img-top book-img" src="books-images/anna_&_the_french_kiss.jpg" alt="Anna and the French Kiss">
+                  <div class="card-body">
+                   
+                    <a class="btn btn-warning" href="payment.html">Shop</a> &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <button type="button" class="btn btn-primary" data-toggle="popover" title="Anna & the French Kiss" data-content="Author: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Stephanie Perkins<br>Genre: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Romance <br> Language: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; English">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <div class="card mb-2">
+                  <img class="img-fluid my-sale" src="images/sale.svg" alt="offer" width="65px">
+                  <img class="card-img-top book-img" src="books-images/a_room_of_one's_own.jpg" alt="A Room of One's Own" width="120%">
+                  <div class="card-body">
+                    
+                    <a class="btn btn-warning" href="payment.html">Shop</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <button type="button" class="btn btn-primary" data-toggle="popover" title="A Room of One's Own" data-content="Author: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Virginia Woolf<br>Genre: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;Non-Fiction <br> Language: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; English">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card mb-2">
+                  <img class="img-fluid my-badge" src="images/premium.svg" alt="offer" width="65px">
+                  <img class="card-img-top book-img" src="books-images/the_nightingale.jpg" alt="The Nightingale">
+                  <div class="card-body">
+                    
+                    <a class="btn btn-warning" href="payment.html">Shop</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <button type="button" class="btn btn-primary" data-toggle="popover" title="The Nightingale" data-content="Author: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Kristin Hannah <br>Genre: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; History <br> Language: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; English">
+                      Details
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          <!--/.First slide-->
+
+          <!--Second slide-->
+          <div class="carousel-item">
+  
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card mb-2">
+                  <img class="img-fluid my-gift-card" src="images/25-percent.svg" alt="offer" width="65px">
+                  <img class="card-img-top book-img" src="books-images/the_sixth_extinction.jpg" alt="The Sixth Extinction">
+                  <div class="card-body">
+                    <!-- <h4 class="card-title">Book name </h4> -->
+                    <a class="btn btn-warning" href="payment.html">Shop</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <button type="button" class="btn btn-primary" data-toggle="popover" title="The Sixth Extinction" data-content="Author: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Elizabeth Kolbert <br>Genre: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Non-Fiction <br> Language: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; English">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-3">
+                <div class="card mb-2">
+                  <img class="img-fluid my-new" src="images/new.svg" alt="offer" width="65px">
+                  <img class="card-img-top book-img" src="books-images/girl_on_the_train.jpeg" alt="The Girl On The Train">
+                  <div class="card-body">
+                    <!-- <h4 class="card-title">Book name </h4> -->
+                    <a class="btn btn-warning" href="payment.html">Shop</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <button type="button" class="btn btn-primary button-text" data-toggle="popover" title="The Girl On The Train" data-content="Author: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Paula Hawkins <br>Genre: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Crime & Thriller <br> Language: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; English">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <div class="card mb-2">
+                  <img class="img-fluid my-sale" src="images/sale.svg" alt="offer" width="65px">
+                  <img class="card-img-top book-img" src="books-images/hound_of_baskervilles.jpeg" alt="Hound of Baskervilles">
+                  <div class="card-body">
+                    <!-- <h4 class="card-title">Book name </h4> -->
+                    <a class="btn btn-warning" href="payment.html">Shop</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <button type="button" class="btn btn-primary" data-toggle="popover" title="Hound of Baskervilles" data-content="Author: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Arthur Conan Doyle <br>Genre: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Crime & Thriller <br> Language: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; English">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card mb-2">
+                  <img class="img-fluid my-premium" src="images/premium.svg" alt="offer" width="65px">
+                  <img class="card-img-top book-img" src="books-images/alias_grace.jpg" alt="Alias Grace">
+                  <div class="card-body">
+                    <!-- <h4 class="card-title">Book name </h4> -->
+                    <a class="btn btn-warning" href="payment.html">Shop</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <button type="button" class="btn btn-primary" data-toggle="popover" title="Margaret Atwood" data-content="Author: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Aditya Anand <br>Genre: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; History <br> Language: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; English">
+                      Details
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!--/.Second slide-->
+  
+          <!--Third slide-->
+          <div class="carousel-item">
+  
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card mb-2">
+                  <img class="img-fluid my-badge" src="images/50-percent.svg" alt="offer" width="65px">
+                  <img class="card-img-top book-img" src="books-images/into_thin_air.jpg" alt="Into Thin Air">
+                  <div class="card-body">
+                    <!-- <h4 class="card-title">Book name </h4> -->
+                    <a class="btn btn-warning" href="payment.html">Shop</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <button type="button" class="btn btn-primary" data-toggle="popover" title="Into Thin Air" data-content="Author: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Jon Krakauer <br>Genre: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;Travel <br> Language: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; English">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-3">
+                <div class="card mb-2">
+                  <img class="img-fluid my-gift-box" src="images/gift-box.svg" alt="offer" width="58px">
+                  <img class="card-img-top book-img" src="books-images/dark_star_safari.jpg" alt="Dark Star Safari">
+                  <div class="card-body">
+                    <!-- <h4 class="card-title">Book name </h4> -->
+                    <a class="btn btn-warning" href="payment.html">Shop</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <button type="button" class="btn btn-primary" data-toggle="popover" title="Dark Star Safari" data-content="Author: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Paul Theroux <br>Genre: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Non-Fiction <br> Language: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; English">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <div class="card mb-2">
+                  <img class="img-fluid my-offer" src="images/offer.svg" alt="offer" width="85px">
+                  <img class="card-img-top book-img" src="books-images/starship_troopers.jpeg" alt="Starship Troopers">
+                  <div class="card-body">
+                    <!-- <h4 class="card-title">Book name </h4> -->
+                    <a class="btn btn-warning" href="payment.html">Shop</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <button type="button" class="btn btn-primary" data-toggle="popover" title="Starship Troopers" data-content="Author: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Robert A. Heinlein <br>Genre: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Fiction <br> Language: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; English">
+                      Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="card mb-2">
+                  <img class="img-fluid my-gift-card" src="images/cards.svg" alt="offer" width="65px">
+                  <img class="card-img-top book-img" src="books-images/the_bet.jpeg" alt="The Bet">
+                  <div class="card-body">
+                    <!-- <h4 class="card-title">Book name </h4> -->
+                    <a class="btn btn-warning" href="payment.html">Shop</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <button type="button" class="btn btn-primary" data-toggle="popover" title="The Bet" data-content="Author: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Anton Chekhov <br>Genre: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; Short Stories <br> Language: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; English">
+                      Details
+                    </button>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Third slide-->
+  
+        </div>
+        <!--/.Slides-->  
+  
+      </div>
+      <!--/.Carousel Wrapper-->
+    </div>
+
+  </div>
+
+
+
+<div class="row row-content">
+  <div class="col-12">
+
+  </div>
+</div>
+
+
+
+<div class="container p-5">
+  <div class="row">
+    <div class = "col-12">
+      <div class = "card card-body bg-light" style="background:white; opacity:1;">
+          <blockquote class = "blockquote" style="color: #888;">
+              <p class = "mb-0"><em>“A book is a garden, an orchard, a storehouse, a party, a company by the way, a counselor, a multitude of counselors.”</em></p>
+              <footer class = "blockquote-footer">
+                   <cite title = "Source Title">  Charles Baudelaire</cite>
+              </footer>
+          </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row row-content">
+  <div class="col-12">
+    
+  </div>
+</div>
+
+
+
+
+
+
+    <div class="container my-4">
+      <a name="genre-section"></a>
+      <div id="multi-category-example" class="carousel slide carousel-multi-item" data-interval = "6000" data-ride="carousel">
+
+        <!--Controls-->
+        <div class="row controls-top mb-4">
+          <div class="col-1">
+            <a class="btn-floating" href="#multi-category-example" data-slide="prev"><img class="img-fluid" src="images/left-arrow.svg" width="70px" alt="previous"></a>
+          </div>
+          <div class="col-10">
+          </div>
+          <div class="col-1 mr-0">
+            <a class="btn-floating" href="#multi-category-example" data-slide="next"><img class="img-fluid " src="images/right-arrow.svg" width="70px" alt="next"></a>
+          </div>
+        </div>
+        <!--/.Controls-->
+  
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+  
+          <!--First slide-->
+          <div class="carousel-item active">
+  
+            <div class="row">
+              <div class="col-md-4"><a href="fiction.html">
+                <div class="card mb-2" >
+                  
+                    <img class="img-fluid img-thumbnail" src="images/category1.jpeg" alt="category1" width="100%">
+                    
+                  <div class="carousel-caption my-caption d-none d-md-block">
+                    <h3>Fiction</h3>
+                  
+                  </div>
+                </div></a>
+              </div>
+  
+              <div class="col-md-4"><a href="romance.html">
+                <div class="card mb-2">
+                  <img class="img-fluid img-thumbnail" src="images/category2.jpeg" alt="category2" width="100%">
+                  <div class="carousel-caption my-caption d-none d-md-block">
+                    <h3>Romantic</h3>
+                  </div>
+                </div></a>
+              </div>
+  
+              <div class="col-md-4"><a href="poetry.html">
+                <div class="card mb-2">
+                  <img class="img-fluid img-thumbnail" src="images/category3.jpeg" alt="category3" width="100%">
+                  <div class="carousel-caption my-caption d-none d-md-block">
+                    <h3>Poetry</h3>
+                  </div>
+                </div></a>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.First slide-->
+  
+  
+          <!--Second slide-->
+          <div class="carousel-item">
+  
+            <div class="row">
+              <div class="col-md-4"><a href="short_stories.html">
+                <div class="card mb-2">
+                  <img class="img-fluid img-thumbnail" src="images/category4.jpeg" alt="category4" width="100%">
+                  <div class="carousel-caption my-caption d-none d-md-block">
+                    <h3>Short Stories</h3>
+                  </div>
+                </div></a>
+              </div>
+  
+              <div class="col-md-4"><a href="fantasy.html">
+                <div class="card mb-2">
+                  <img class="img-fluid img-thumbnail" src="images/category5.jpeg" alt="category5" width="100%">
+                  <div class="carousel-caption my-caption d-none d-md-block">
+                    <h3>Fantasy</h3>
+                  </div>
+                </div></a>
+              </div>
+  
+              <div class="col-md-4"><a href="travel.html">
+                <div class="card mb-2">
+                  <img class="img-fluid img-thumbnail" src="images/category6.jpeg" alt="category6" width="100%">
+                  <div class="carousel-caption my-caption d-none d-md-block">
+                    <h3>Travel</h3>
+                  </div>
+                </div></a>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Second slide-->
+  
+          <!--Third slide-->
+          <div class="carousel-item">
+  
+            <div class="row">
+              <div class="col-md-4"><a href="non_fiction.html">
+                <div class="card mb-2">
+                  <img class="img-fluid img-thumbnail" src="images/category7.jpeg" alt="category7" width="100%">
+                  <div class="carousel-caption my-caption d-none d-md-block">
+                    <h3>Non Fiction</h3>
+                  </div>
+                </div></a>
+              </div>
+  
+              <div class="col-md-4"><a href="history.html">
+                <div class="card mb-2">
+                  <img class="img-fluid img-thumbnail" src="images/category8.jpeg" alt="category8" width="100%">
+                  <div class="carousel-caption my-caption d-none d-md-block">
+                    <h3>History</h3>
+                  </div>
+                </div></a>
+              </div>
+  
+              <div class="col-md-4"><a href="crime_&_thriller.html">
+                <div class="card mb-2">
+                  <img class="img-fluid img-thumbnail" src="images/category9.jpeg" alt="category9" width="100%">
+                  <div class="carousel-caption my-caption d-none d-md-block">
+                    <h3>Crime & Thriller</h3>
+                  </div>
+                </div></a>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Third slide-->
+  
+        </div>
+        <!--/.Slides-->
+  
+      </div>
+      <!--/.Carousel Wrapper-->
+  
+    </div>
+
+
+
+    <div class="row row-content">
+      <div class="col-12">
+        
+      </div>
+    </div>
+    
+    
+    
+    <div class="row row-content">
+      <div class="col-12">
+        
+      </div>
+    </div>
+    
+    <div class="row row-content">
+      <div class="col-12">
+        
+      </div>
+    </div>
+    
+
+  
+
+
+    <footer class = "footer">
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-4 offset-sm-1 col-sm-2">
+            <h5>Links</h5>
+            <ul class = "list-unstyled">
+              <li><a href = "#">Home</a></li>
+              <li><a href = "#genre-section">Shopping Cart</a></li>
+              <li><a href = "login.html">Login</a></li>
+            </ul>
+          </div>
+          <div class = "col-6 offset-2 col-sm-3 align-self-center">
+             <img id = "overview_back" class="img-fluid" src="images/back.svg" alt="back" width="70px">
+             <a href = "fiction.html"><img class="img-fluid" src="images/next.svg" alt="next" width="70px"></a>
+          </div>
+          <div class = "col-12 col-sm-4 align-self-center">
+            <div class = "text-center">
+              <a class = "btn btn-social-icon btn-google" href="http://google.com/+"><i class = "fa fa-google-plus fa-lg"></i></a>
+              <a class = "btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+              <a class = "btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+              <a class = "btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+              <a class = "btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+              <a href="mailto:anand.aditya0803@gmail.com"><img class="img-fluid" src="images/email.svg" alt="Email" width="36px"></a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <p>© Copyright 2020 Aditya Anand</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover({
+                html: true,
+                template: '<div class="popover"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div><div class="popover-footer"><a href="javascript:void();" class="btn btn-info btn-sm">Close</a></div></div>'
+            });
+            
+            // Custom jQuery to hide popover on click of the close button
+            $(document).on("click", ".popover-footer .btn" , function(){
+              $(this).closest('div.popover').popover('hide');
+            });
+        });
+
+</script>
+
+<script>
+  function color_change(element){
+    element.style.color="white";
+    element.style.transition="0.6s";
+  }
+  function color_back(element){
+    element.style.color="black";
+    element.style.transition="0.6s";
+  }
+  </script>
+</body>
+</html>

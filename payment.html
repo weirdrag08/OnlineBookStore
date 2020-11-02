@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit = no"/>
+    <meta http-equiv="x-ua-compatible" content="ie = edge" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" integrity="sha512-f8mUMCRNrJxPBDzPJx3n+Y5TC5xp6SmStstEfgsDXZJTcxBakoB5hvPLhAfJKa9rCvH+n3xpJ2vQByxLk4WP2g==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Trade+Winds&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/payment.css" />
+    <title>Online Book Store: Payment</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top"> 
+      <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" style="color: #648888; font-size: 200%;"><img src = "../images/undo.svg" alt = "logo" class = "img-fluid" width = "60px">  Back</a>
+          <div class="collapse navbar-collapse" id="Navbar">
+              <ul class="navbar-nav ml-auto">
+                 
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+              <div class="card mx-auto">
+                <p class="heading" style="font-family: 'Poppins';">PAYMENT DETAILS</p>
+                <form class="card-details ">
+                  <div class="form-group mb-0">
+                    <p class="text-warning mb-0" style="font-family: 'Poppins';">Card Number</p> <input type="text"
+                      name="card-num" placeholder="1234 5678 9012 3457" size="17" id="cno" minlength="19" maxlength="19"> <img class = "img-fluid payment_image"
+                      src="images/payment_image.svg" width="160px"/>
+                  </div>
+                  <div class="form-group">
+                    <p class="text-warning mb-0" style="font-family: 'Poppins';">Cardholder's Name</p> <input type="text"
+                      name="name" placeholder="Name" size="17">
+                  </div>
+                  <div class="form-group pt-2">
+                    <div class="row d-flex">
+                      <div class="col-sm-4">
+                        <p class="text-warning mb-0" style="font-family: 'Poppins';">Expiration</p> <input type="text"
+                          name="exp" placeholder="MM/YY" size="5" id="exp" minlength="5" maxlength="5">
+                      </div>
+                      <div class="col-sm-3">
+                        <p class="text-warning mb-0" style="font-family: 'Poppins';">CVV</p> <input type="password" name="cvv"
+                          placeholder="&#9679;&#9679;&#9679;" size="3" minlength="3" maxlength="3">
+                      </div>
+                    </div>
+                    <div class = "row justify-content-center" style = "margin-top: 15px;">
+                      <div class = "col-auto">
+                        <div class="col-sm-5 pt-0 arrow-container"> <button type="button" class="btn arrow-container-button" data-toggle="modal"
+                            data-target="#exampleModalCenter" onclick = "getting_order_number()">Pay <i class="fa fa-check fa-lg"></i></button> </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-warning ">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Order Confirmation Receipt</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <img class="img-fluid" src="images/payment_confirmation.svg" width="120%">
+                    </div>
+                    <div class="col-12 col-md-8">
+                      <div class="row">
+                        <div class="col-12">
+                          <h2>Thankyou For Order! </h2>
+                        </div>
+                        <div class="col-12 text-center">
+                          <h5 id = "o-number"></h5>
+                        </div>
+                        <div class="col-12 text-center">
+                          <h6><em>You will receive an email confirmation shortly!</em></h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <h3>Order Summary:</h3>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-4 offset-sm-2 text-left">
+                        <h6>Book Name:</h6>
+                        <h6>Author Name:</h6>
+                        <h6>Payment Done:</h6>
+                        <h6>Order Date:</h6>
+                      </div>
+                      <div class="col-sm-5 offset-sm-1 text-left">
+                        <h6 id = "name_of_book">XXXXXX</h6>
+                        <h6 id = "name_of_author">Aditya Anand</h6>
+                        <h6>Successful !</h6>
+                        <h6 id = "date_with_time">ZZZZZZ</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer bg-warning">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Download</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src = "payment.js"></script>
+</body>
+</html>

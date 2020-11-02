@@ -1,0 +1,81 @@
+.row-header{
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.row-content{
+    margin: 0px auto;
+    padding: 60px 0px;
+    min-height: 400px;
+}
+
+.footer{
+    color:#648888;
+    margin: 0px auto;
+    padding: 20px 0px;
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+
+}
+
+.address{
+    font-size: 80%;
+    margin: 0px;
+    color: #0F0F0F;
+}
+
+body{
+    padding: 65px 0px 0px 0px;
+    z-index: 0;
+    color: #FFFFFF;
+    background: #000000;
+}
+
+.navbar-dark{
+    background-color: #F3A002;
+
+}
+
+p{
+    font-size: 1.1em;
+}
+
+.page-heading{
+    margin: 20px 0px; 
+    font-family: 'Trade Winds'; 
+    text-align: center; 
+    font-size: 450%;
+    background: -webkit-linear-gradient(left, #F32170, #FFEB07, #2196F3, #FF00EB);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.book-names{
+    font-family: "Lobster";
+    font-size: 240%;
+}
+
+
+
+.footer ul li a{
+    color:#648888;
+}
+
+.dropdown-menu{
+    background-color: #F3A002;
+}
+.dropdown-item:hover{
+    background-color: black;
+    color:white;
+    transition: 0.6s;
+}
+.navbar .btn{
+    color: #000000;
+} 
+
+.nav-item:hover{
+    color:black;
+    transition: 0.6s;
+}
+.nav-link:hover{
+    color:white;
+}

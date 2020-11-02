@@ -1,0 +1,119 @@
+.row-header{
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.row-content{
+    margin: 0px auto;
+    padding: 50px 0px;
+    min-height: 400px;
+}
+
+.footer{
+    background-color: #293F50;
+    margin: 0px auto;
+    padding: 20px 0px;
+    color: #FFFFFF;
+    /* height: 37vh; */
+}
+
+.address{
+    font-size: 80%;
+    margin: 0px;
+    color: #0F0F0F;
+}
+
+body{
+    padding: 65px 0px 0px 0px;
+    z-index: 0;
+    color: #293F50;
+    /* background: #000000; */
+    /* background: #293F50; */
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+}
+
+.navbar-dark{
+    /* background-color: #512DA8; */
+    background-color: #293F50;
+}
+hr{
+    border-top: 1px solid #FFF;
+    opacity: 0.4;
+}
+p{
+    font-size: 1.1em;
+}
+
+
+.rate {
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 30px;
+    font-weight: 300;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+.buttons {
+    top: 36px;
+    position: relative
+}
+
+.rating-submit {
+    border-radius: 15px;
+    color: #fff;
+    height: 49px
+}
+
+.rating-submit:hover {
+    color: #fff
+}
+
+.block_diagram_img{
+    margin-top: 40px;
+    margin-left: 19vw; 
+    margin-bottom: 30px;
+}
+
+.card-body{
+    height:70px;
+}
+
+ul li a{
+    color: #FFFFFF !important;
+
+}

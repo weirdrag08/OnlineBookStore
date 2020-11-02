@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" integrity="sha512-f8mUMCRNrJxPBDzPJx3n+Y5TC5xp6SmStstEfgsDXZJTcxBakoB5hvPLhAfJKa9rCvH+n3xpJ2vQByxLk4WP2g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/login.css"/>
+    <title>Online Book Store: Login</title>
+</head>
+
+<body>
+    <nav class = "navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class = "container">
+          <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#Navbar">
+            <span class = "navbar-toggler-icon"></span>
+          </button>
+          <a class = "navbar-brand" href = "#"><img src = "images/symbol.svg" alt = "logo" class = "img-fluid" width = "50px"></a>
+          <div class = "collapse navbar-collapse" id = "Navbar">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item active"><a class="nav-link" href="index.html" onmouseenter="color_change(this)" onmouseout="color_back(this)" style="color:#000000; font-size:110%;"><img src = "images/bookshelf.svg" width = "45px" class = "img-fluid"> Home</a></li> &nbsp; &nbsp;
+              &nbsp; &nbsp; <li class="nav-item"><img src = "images/cart.svg" width = "45px" class = "img-fluid" style="margin-top: 5px;"></li> 
+              
+              <li class="nav-item"><div class="dropdown">
+                <a class="btn dropdown-toggle nav-link" type="button" id="dropdownMenuButton" role="button" data-toggle="dropdown" style=" margin-top: 6px; color:#000000; font-size: 110%;"onmouseenter="color_change(this)" onmouseout="color_back(this)">
+                  Shopping Cart
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="fiction.html">Fiction</a>
+                  <a class="dropdown-item" href="romance.html">Romance</a>
+                  <a class="dropdown-item" href="fantasy.html">Fantasy</a>
+                  <a class="dropdown-item" href="history.html">History</a>
+                  <a class="dropdown-item" href="poetry.html">Poetry</a>  
+                  <a class="dropdown-item" href="travel.html">Travel</a>
+                  <a class="dropdown-item" href="non_fiction.html">Non Fiction</a>
+                  <a class="dropdown-item" href="short_stories.html">Short Stories</a>
+                  <a class="dropdown-item" href="crime_&_thriller.html">Crime & Thriller</a>
+                </div>
+              </div></li>
+              
+            &nbsp; &nbsp; <li class="nav-item"><a class="nav-link" href="login.html" role="button" style="color:black; font-size: 110%;" onmouseenter="color_change(this)" onmouseout="color_back(this)"><img src="images/employees.svg" width="45px" class="img-fluid"> Login</a></li> &nbsp; &nbsp;
+            </ul>
+          </div> 
+        </div>
+      </nav>
+
+    <div class="container">
+         <div class = "row row-content align-items-center" id =  "opened">
+            <div class = "col-12 col-sm-7">
+                <img class = "img-fluid" src = "images/login_dashboard1.svg" alt = "Login Background Page" width = "100%">
+            </div>
+            <div class = "col-12 col-sm-5">
+                <h1 style = "margin: 20px 0px 30px 0px; font-size: 350%; text-align: center;">Welcome Back!</h1>
+                <p class = "d-none d-sm-block" style = "margin: 20px 0px 70px 0px; text-align: center;">To keep connected with us please login with your personal information by email address and password</p>
+                <form>
+                    <div class="form-group row justify-content-center">
+                        <label for="Name" class="col-md-3 col-form-label">Name:</label>
+                        <div class="col-md">
+                            <input type="text" class="form-control" id="username"  name="username" placeholder="Name" onchange = "name_check()" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row justify-content-center">
+                    <label for = "Email" class = "col-md-3 col-form-label">Email id:</label>
+                    <div class = "col-md">
+                        <!-- ! SET THE PATTER FOR EMAIL AND NAME AND STORE THE VALUES OF LOGIN SO THAT IT CAN BE USED ON THE USER PAGE -->
+                        <input type = "email" class = "form-control" id = "mail" name = "mail" placeholder = "Email" onchange = "mail_check()" required> 
+                    </div>
+                    </div>
+                    <div class = "form-group row justify-content-center">
+                        <!-- ! THINK OF A PLACEHOLDER FOR PASSWORD CONSIDERING THE PATTERN TYPE-->
+                        <label for = "pass" class = "col-md-3 col-form-label">Password:</label>
+                        <div class = "col-md">
+                            <input class = "form-control" pattern=".{8,}" type = "password" id = "pass" name = "pass" placeholder = "Password" onchange = "password_check()" required>
+                        </div>
+                    </div>
+                  
+                    <div class = "form-group row form-part">
+                        <div class="form-check form-check-inline offset-sm-2">
+                            <input type="checkbox" class="form-check-input checkbox-item" id="chk1" /> <label
+                                class="form-check-label label-item" for="chk1"><img class="img-fluid login-image" src="images/login-check.svg"
+                                    alt="checkmark" width="28px">&nbsp;  Remember me!</label><br />
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input checkbox-item" id="chk2"/> <label
+                                class="form-check-label label-item" for="chk2"><img class="img-fluid" src="images/login-check.svg" alt="checkmark"
+                                    width="28px">&nbsp; Forget Password?</label><br />
+                        </div>
+                    </div>
+                    <div class = "form-group row justify-content-center">
+                        <div class="col-auto">
+                            <button id = "validate-button" type="button" class="btn btn-outline-primary" onclick="validate_data()" disabled style = "cursor: not-allowed;">Validate</button>
+                        </div>
+                        <div class = "col-auto">
+                            <button id="login-button" type="button" class="btn btn-outline-success" onclick="display_user()" disabled style = "cursor: not-allowed;">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+         </div>
+       <div class = "row row-content align-items-center" id = "closed">
+        <div class="col-sm-5">
+            <dl class="row">
+                <dt class="col-5">Name: </dt>
+                <dd id = "name_of_user" class="col-7"></dd>
+                <dt class="col-5">Email: </dt>
+                <dd id = "mail_of_user" class="col-7"></dd>
+                <dt class="col-5">Last Login: </dt>
+                <dd id = "login_of_user" class="col-7"></dd>
+            </dl>
+        </div>
+           <div class = "col-sm-6">
+            <img class="img-fluid" src="images/login_dashboard2.svg" alt="Login Background Page" width="100%">
+           </div>
+       </div>
+    </div>
+
+    <footer class = "footer">
+        <div class = "container">
+          <div class = "row">
+            <div class = "col-4 offset-sm-1 col-sm-2">
+              <h5>Links</h5>
+              <ul class = "list-unstyled">
+                <li><a href = "#">Home</a></li>
+                <li><a href = "#genre-section">Shopping Cart</a></li>
+                <li><a href = "login.html">Login</a></li>
+              </ul>
+            </div>
+            <div class = "col-6 offset-2 col-sm-3 align-self-center">
+               <a href = "index.html"><img id = "overview_back" class="img-fluid" src="images/back.svg" alt="back" width="70px"></a>
+               <img id = "overview_next"  class="img-fluid" src="images/next.svg" alt="next" width="70px">
+            </div>
+            <div class = "col-12 col-sm-4 align-self-center">
+              <div class = "text-center">
+                <a class = "btn btn-social-icon btn-google" href="http://google.com/+"><i class = "fa fa-google-plus fa-lg"></i></a>
+                <a class = "btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                <a class = "btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                <a class = "btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                <a class = "btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                <a href="mailto:anand.aditya0803@gmail.com"><img class="img-fluid" src="images/email.svg" alt="Email" width="36px"></a>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <p>© Copyright 2020 Aditya Anand</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+      
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+  
+  <script>
+    function color_change(element){
+      element.style.color="white";
+      element.style.transition="0.6s";
+    }
+    function color_back(element){
+      element.style.color="black";
+      element.style.transition="0.6s";
+    }
+    </script>
+</body>
+
+</html>
+
+
